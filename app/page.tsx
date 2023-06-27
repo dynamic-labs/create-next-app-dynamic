@@ -4,10 +4,10 @@ import Menu from '../components/Menu'
 
 export default function Home() {
 	return (
-		<main className="min-h-screen relative flex align-center justify-center flex-col">
+		<main className="min-h-screen relative flex align-center justify-end flex-col">
 			<Menu />
-			<Image src={'/home.png'} className="z-0" fill alt="Home"></Image>
-			<div className="z-10 mt-64 mx-auto">
+			<Image src={'/home.png'} className="z-0 mt-8" fill alt="Home"></Image>
+			<div className="z-10 mb-32 mx-auto">
 				<DynamicWidget />
 			</div>
 		</main>
