@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+
+.dynamic-shadow-dom {
+  --dynamic-connect-button-shadow: 0px 4px 4px -4px rgba(24, 39, 75, 0.32); 
+  --dynamic-connect-button-background: radial-gradient(139.35% 139.35% at 0.00% 100.00%, rgba(160, 126, 255, 0.40) 0%, rgba(160, 126, 255, 0.00) 100%), linear-gradient(136deg, #346BFF 0%, #59F 100%);
+  --dynamic-connect-button-color-hover: #0000;
+  --dynamic-connect-button-background-hover: #0000;
 }

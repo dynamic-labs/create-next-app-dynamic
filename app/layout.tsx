@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { DynamicContextProvider } from '../lib/dynamic';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <DynamicContextProvider
+        settings={{
+          environmentId: process.env.DYNAMIC_PROJECT_ID || '',
+        }}>
+          {children}
+        </DynamicContextProvider>
+      </body>
     </html>
   )
 }
