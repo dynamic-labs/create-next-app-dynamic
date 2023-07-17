@@ -20,8 +20,8 @@ pnpm install
 
 3. Add your env variable
 
-Rename `.env.example` to `.env.local` and add your Dynamic Project ID as the value of the `DYNAMIC_PROJECT_ID` variable.
-You can find your Dynamic project ID in the [developer section of your dashboard](https://app.dynamic.xyz/dashboard/developer).
+Rename `.env.example` to `.env.local` and add your Dynamic Environment ID as the value of the `DYNAMIC_ENVIRONMENT_ID` variable.
+You can find your Dynamic environment ID in the [developer section of your dashboard](https://app.dynamic.xyz/dashboard/developer).
 
 4. Run the development server:
 
