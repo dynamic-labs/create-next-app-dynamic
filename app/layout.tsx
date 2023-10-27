@@ -1,6 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { DynamicContextProvider } from '../lib/dynamic'
+import {
+	DynamicContextProvider,
+	EthereumWalletConnectors,
+} from '../lib/dynamic'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +23,7 @@ export default function RootLayout({
 				<DynamicContextProvider
 					settings={{
 						environmentId: process.env.DYNAMIC_PROJECT_ID || '',
+						walletConnectors: [EthereumWalletConnectors],
 					}}
 				>
 					{children}

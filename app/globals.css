@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.dynamic-shadow-dom {
+	--dynamic-connect-button-background: #000;
+	--dynamic-connect-button-color: #000;
+	--dynamic-connect-button-text: #fff;
+
+	--dynamic-connect-button-color-hover: #fff;
+	--dynamic-connect-button-border-hover: 2px solid #000;
+	--dynamic-connect-button-shadow-hover: 0px 3px 0px #000000;
+}
+
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -24,17 +34,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-}
-
-.dynamic-shadow-dom {
-	--dynamic-hover: linear-gradient(136deg, #346bff 0%, #59f 100%);
-	--dynamic-connect-button-shadow: 0px 4px 4px -4px rgba(24, 39, 75, 0.32);
-	--dynamic-connect-button-background: radial-gradient(
-			139.35% 139.35% at 0% 100%,
-			rgba(160, 126, 255, 0.4) 0%,
-			rgba(160, 126, 255, 0) 100%
-		),
-		linear-gradient(136deg, #346bff 0%, #59f 100%);
-	/* --dynamic-connect-button-color-hover: #0000;
-	--dynamic-connect-button-background-hover: #0000; */
 }
